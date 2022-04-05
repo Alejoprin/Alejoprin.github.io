@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* Orden de los estilos
+1. Posicionamiento: static, absolute, relative,fixed
+2. Modelo caja(Box model): margin, border, padding, content
+3. Tipografia: tipos, tamaño de fuente, etc
+4. Visuales: box-shadow, border-radius, gradient, etc
+5. Otros (herramientas de Sass: mixin, funciones, extends)
+*/
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  width: 320px;
+  height: 334px;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.header {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+  text-align: center;
+}
+.header img {
+  width: 150px;
+  height: 24px;
+  margin: 0 auto;
+}
+.header h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+}
+.header__description {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #FFE9D5;
+}
+.header button {
+  position: absolute;
+  width: 230px;
+  height: 50px;
+  bottom: -25px;
+  right: 45px;
+  display: flex;
+  align-items: center;
+  background-color: #FAF8F7;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.header button p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #201E1C;
+  margin-left: 16px;
+}
+.header button img {
+  width: 12px;
+  margin-left: 15px;
+}
