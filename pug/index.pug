@@ -20,7 +20,30 @@ html(lang="en")
 
         include componentes/bitcoin-img
         
-        section 
+        section.main-plans-container#plans
+            div.plans--title
+                h2 Escoge el plan que mejor se ajuste a ti. 
+                p Cualquier plan te da acceso completo a nuestra plataforma.
+            section.plans-container--slider
+                +cards
+                article.plans-container--card
+                    p.recomended Recomendado
+                    div.plan-info-container
+                        h3.plan-card--title Pago Anual
+                        p.plan-card--price #[span $] 99
+                        p.plan-card--saving *Ahorras $129 comparado al plan mensual.
+                        button.plan-card--ca Escoger este #[span] 
+                +cards
 
         footer 
+            section
+                ul
+                    li
+                        a(href="http://") 
+                    li
+                        a(href="http://") 
+                    li
+                        a(href="http://") 
+            section
+                img(src="", alt="")
 

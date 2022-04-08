@@ -4,3 +4,11 @@ mixin product-cards(image, title, info)
             span.clock
             p.product--card-title #{title}
             p.product--card-body #{info}
+
+mixin cards()
+    article.plans-container--card
+        div.plan-info-container
+            h3.plan-card--title Pago Anual
+            p.plan-card--price #[span $] 99
+            p.plan-card--saving *Ahorras $129 comparado al plan mensual.
+            button.plan-card--ca Escoger este #[span] 

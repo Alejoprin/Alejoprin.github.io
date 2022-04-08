@@ -16,6 +16,7 @@
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -304,4 +305,112 @@ main .main-exchange-container .main-currency-table .currency-table--date p {
   line-height: 2.6rem;
   color: #FFFFFF;
   text-align: center;
+}
+
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: #FAF8F7;
+}
+.main-plans-container .plans--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.main-plans-container .plans--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: #282623;
+}
+.main-plans-container .plans--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+.main-plans-container .plans-container--slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.main-plans-container .plans-container--slider .plans-container--card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.main-plans-container .plans-container--slider .plans-container--card .recomended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  top: -15px;
+  left: calc(50% - 60px);
+  padding: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #F7931A;
+}
+.main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #282623;
+}
+.main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--price {
+  position: relative;
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  letter-spacing: -5px;
+  color: #282623;
+}
+.main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--price span {
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 45px);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  font-family: "DM Sans", sans-serif;
+  color: #282623;
+  background-color: #FAF8F7;
+  border: 2px solid #F7931A;
+  border-radius: 4px;
+}
+.main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/icons/arrow-right.svg");
+  vertical-align: text-bottom;
 }
