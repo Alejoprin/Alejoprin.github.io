@@ -1,0 +1,12 @@
+@media (min-width: 930px){
+    .product-cards--mainContainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 930px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .plans-container--slider{
+        justify-content: center;
+    }
+}
